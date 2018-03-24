@@ -16,7 +16,7 @@ export default function StarRating(props) {
   return (
     <div>
       <div className="rating">{genStarRating(props.rating)}</div>
-      <a href="#" alt="read reviews">
+      <a href="http://wayfair.com" alt="read reviews">
         {props.rating.length}
       </a>
     </div>

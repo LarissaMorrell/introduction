@@ -6,19 +6,19 @@ export default class LeftContainer extends Component {
     return (
       <div>
         <nav>
-          <a src="#" alt="">
+          <a src="http://wayfair.com" alt="">
             Bed & Bath
           </a>
           <span>/</span>
-          <a src="#" alt="">
+          <a src="http://wayfair.com" alt="">
             Bedding
           </a>
           <span>/</span>
-          <a src="#" alt="">
+          <a src="http://wayfair.com" alt="">
             Blankets & Throws
           </a>
           <span>/</span>
-          <a src="#" alt="">
+          <a src="http://wayfair.com" alt="">
             Cotton Blankets
           </a>
           <span>/</span>

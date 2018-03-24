@@ -8,7 +8,7 @@ export default class ProductInfoContainer extends Component {
         <h1>Larissa Morrell</h1>
         <p>
           by
-          <a href="#" alt="someone">
+          <a href="http://wayfair.com" alt="someone">
             some person
           </a>
         </p>
