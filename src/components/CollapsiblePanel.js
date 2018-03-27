@@ -7,8 +7,9 @@ export default class CollapsiblePanel extends Component {
       //TODO add arrow for smaller screen size
       //TODO pass in props different panelContents
       expandIcon: true,
+      showContent: false,
       panelContent: this.props.panelComponent,
-      showMore: false
+      showMoreDetails: false
     };
     this.addDetails = this.addDetails.bind(this);
   }
@@ -16,16 +17,41 @@ export default class CollapsiblePanel extends Component {
     let newState = Object.assign({}, this.state, {
       expandIcon: !this.state.expandIcon
     });
+    console.log(this.state.panelContent);
+    this.setState(newState);
+  }
+  showContentToggle() {
+    let newState = Object.assign({}, this.state, {
+      showContent: !this.state.showContent
+    });
     this.setState(newState);
   }
   showMoreDetailsToggle() {
     let newState = Object.assign({}, this.state, {
-      showMore: !this.state.showMore
+      showMore: !this.state.showMoreDetails
     });
     this.setState(newState);
   }
 
   render() {
+    let content = () => {
+      if (this.props.showContent) {
+        return (
+          <div
+            className="collapsible-panel-details-container"
+            onClick={() => this.showContentToggle()}
+          >
+            {this.state.expandIcon ? null : this.state.panelContent}
+            <button onClick={() => this.showMoreDetailsToggle()}>
+              {this.state.showMoreDetails ? "Show Less" : "Show More"}
+            </button>
+          </div>
+        );
+      } else {
+        return;
+      }
+    };
+
     return (
       <div className="collapsible-panel">
         <button onClick={() => this.addDetails()}>
@@ -34,12 +60,7 @@ export default class CollapsiblePanel extends Component {
             {this.state.expandIcon ? "+" : "-"}
           </span>
         </button>
-        <div className="collapsible-panel-details-container">
-          {this.state.expandIcon ? this.state.panelContent : null}
-          <button onClick={() => this.showMoreDetailsToggle()}>
-            {this.state.showMore ? "Show Less" : "Show More"}
-          </button>
-        </div>
+        {content}
       </div>
     );
   }
