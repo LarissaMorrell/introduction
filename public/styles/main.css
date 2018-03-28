@@ -17,3 +17,11 @@
 .collapsible-panel {
   background-color: yellow;
 }
+.collapsible-panel-details-container {
+  background-color: orange;
+}
+
+img.language-logo {
+  max-width: 125px;
+  border: 1px solid black;
+}
