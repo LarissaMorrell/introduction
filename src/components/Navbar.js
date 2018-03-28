@@ -5,7 +5,9 @@ export default class Navbar extends Component {
     return (
       <div>
         <header className="navbar">
-          <div className="outer" />
+          <div className="outer">
+            Available to make amazing contributions to your team
+          </div>
           <div className="inner">
             <div className="logo">
               <a href="http://larissamorrell.com">
