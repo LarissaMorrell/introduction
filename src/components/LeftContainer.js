@@ -8,7 +8,7 @@ export default class LeftContainer extends Component {
     return (
       <div className="left-container">
         <div className="test" />
-        <Sticky>
+        <Sticky bottomBoundary={1200}>
           <SubNav />
           <CodePreviewContainer />
         </Sticky>
