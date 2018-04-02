@@ -1,9 +1,12 @@
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font: 16px/1.5 "Josefin Sans", arial, sans-serif;
   font-weight: 300;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: black;
 }
 
 header > .outer {
@@ -25,8 +28,6 @@ header > .inner {
 .header-logo {
   width: 134px;
   height: 31px;
-}
-.main-content-container {
 }
 .left-container {
   height: 100vh;
@@ -62,7 +63,9 @@ header > .inner {
 .collapsible-panel-details-container {
   background-color: orange;
 }
-
+.language-card {
+  display: inline-block;
+}
 img.language-logo {
   max-width: 125px;
   border: 1px solid black;

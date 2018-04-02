@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class LanguageCard extends Component {
   render() {
     return (
-      <div>
+      <div className="language-card">
         <img
           className="language-logo"
           src={`./media/${this.props.language.toLowerCase()}-logo.png`}
