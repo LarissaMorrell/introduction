@@ -32,6 +32,7 @@ header > .inner {
   height: 100vh;
   display: inline-block;
   width: 50%;
+  vertical-align: top;
 }
 .left-container > nav {
   background-color: rgba(246, 244, 238, 0.6);
