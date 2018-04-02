@@ -9,28 +9,29 @@ export default class LanguagesPanel extends Component {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 2,
-      arrows: true
+      arrows: true,
+      adaptiveHeight: true
     };
 
     return (
-      <Slider {...settings} className="test">
-        <div>
-          <LanguageCard language="React" skill-level={5} />
+      <Slider {...settings} className="languages-panel">
+        <div className="language-card-container">
+          <LanguageCard language="React" rating={5} />
         </div>
-        <div>
-          <LanguageCard language="Javascript" skill-level={4} />
+        <div className="language-card-container">
+          <LanguageCard language="Javascript" rating={4} />
         </div>
-        <div>
-          <LanguageCard language="HTML" skill-level={5} />
+        <div className="language-card-container">
+          <LanguageCard language="HTML" rating={5} />
         </div>
-        <div>
-          <LanguageCard language="CSS" skill-level={5} />
+        <div className="language-card-container">
+          <LanguageCard language="CSS" rating={5} />
         </div>
-        <div>
-          <LanguageCard language="Node" skill-level={3.5} />
+        <div className="language-card-container">
+          <LanguageCard language="Node" rating={3.5} />
         </div>
-        <div>
-          <LanguageCard language="Java" skill-level={4} />
+        <div className="language-card-container">
+          <LanguageCard language="Java" rating={4} />
         </div>
       </Slider>
     );

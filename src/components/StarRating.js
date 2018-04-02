@@ -13,12 +13,5 @@ export default function StarRating(props) {
     return starRating;
   }
 
-  return (
-    <div>
-      <div className="rating">{genStarRating(props.rating)}</div>
-      <a href="http://wayfair.com" alt="read reviews">
-        {props.rating.length}
-      </a>
-    </div>
-  );
+  return <div className="rating">{genStarRating(props.rating)}</div>;
 }

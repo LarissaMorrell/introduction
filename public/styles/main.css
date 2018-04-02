@@ -8,6 +8,25 @@ body {
 .slick-prev:before {
   color: black;
 }
+.slick-prev,
+.slick-next {
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 header > .outer {
   color: #fff;
@@ -63,10 +82,17 @@ header > .inner {
 .collapsible-panel-details-container {
   background-color: orange;
 }
-.language-card {
+.language-card-container {
   display: inline-block;
+  background-color: white;
+  margin: 8px;
+  padding: 8px;
+  height: 250px;
+  min-width: 165px;
 }
 img.language-logo {
-  max-width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   border: 1px solid black;
 }

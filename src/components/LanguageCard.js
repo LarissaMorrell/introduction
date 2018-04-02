@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import StarRating from "./StarRating.js";
 
 export default class LanguageCard extends Component {
   render() {
@@ -10,6 +11,7 @@ export default class LanguageCard extends Component {
           alt={`${this.props.language}`}
         />
         <h3>{this.props.language}</h3>
+        <StarRating rating={[this.props.rating]} />
       </div>
     );
   }
