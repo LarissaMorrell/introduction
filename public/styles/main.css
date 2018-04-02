@@ -1,5 +1,40 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: 16px/1.5 "Josefin Sans", arial, sans-serif;
+  font-weight: 300;
+}
+
+header > .outer {
+  color: #fff;
+  background: #774a77;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.813rem;
+}
+header > .inner {
+  color: #000;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  font-size: 0.813rem;
+}
+
 .header-logo {
   width: 134px;
+  height: 31px;
+}
+.main-content-container {
+}
+.left-container {
+  height: 100vh;
+  display: inline-block;
+  width: 50%;
+}
+.left-container > nav {
+  background-color: rgba(246, 244, 238, 0.6);
 }
 
 .thumbnail-images {
@@ -7,7 +42,13 @@
 }
 
 .large-image {
-  width: 388px;
+  width: 300px;
+}
+
+.right-container {
+  background-color: #f6f4ee;
+  display: inline-block;
+  width: 50%;
 }
 
 .yellow-star {

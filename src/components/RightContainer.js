@@ -7,7 +7,7 @@ import LanguagesPanel from "./LanguagesPanel.js";
 export default class RightContainer extends Component {
   render() {
     return (
-      <div>
+      <div className="right-container">
         <ProductInfoContainer />
         <ReviewsContainer />
         <AboutLarissaContainer />

@@ -26,7 +26,7 @@ export default class LeftContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="left-container">
         <nav>
           <a src="http://wayfair.com" alt="hi">
             Bed & Bath
