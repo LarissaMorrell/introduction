@@ -21,7 +21,10 @@ export default class LanguagesPanel extends Component {
           <LanguageCard language="React" rating={5} />
         </div>
         <div className="language-card-container">
-          <LanguageCard language="Javascript" rating={4} />
+          <LanguageCard language="Redux" rating={4} />
+        </div>
+        <div className="language-card-container">
+          <LanguageCard language="Javascript" rating={4.5} />
         </div>
         <div className="language-card-container">
           <LanguageCard language="HTML" rating={5} />
@@ -30,10 +33,10 @@ export default class LanguagesPanel extends Component {
           <LanguageCard language="CSS" rating={5} />
         </div>
         <div className="language-card-container">
-          <LanguageCard language="Node" rating={3.5} />
+          <LanguageCard language="Java" rating={4} />
         </div>
         <div className="language-card-container">
-          <LanguageCard language="Java" rating={4} />
+          <LanguageCard language="Node" rating={3.5} />
         </div>
       </Slider>
     );
