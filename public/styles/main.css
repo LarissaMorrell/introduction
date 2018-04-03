@@ -9,7 +9,9 @@ body {
   color: black;
 }
 .slick-prev,
-.slick-next {
+.slick-next,
+.slick-prev:hover,
+.slick-next:hover {
   top: 50%;
   z-index: 1;
   width: 50px;
@@ -22,10 +24,6 @@ body {
 }
 .slick-next {
   right: 0;
-}
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 header > .outer {
@@ -75,6 +73,9 @@ header > .inner {
 .yellow-star {
   color: #fab863;
 }
+.gray-star {
+  color: #dedede;
+}
 
 .collapsible-panel {
   background-color: yellow;
@@ -91,8 +92,6 @@ header > .inner {
   min-width: 165px;
 }
 img.language-logo {
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   border: 1px solid black;
 }

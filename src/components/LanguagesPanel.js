@@ -8,9 +8,11 @@ export default class LanguagesPanel extends Component {
       arrows: true,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 2,
-      arrows: true,
-      adaptiveHeight: true
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      centerMode: false,
+      autoplay: true,
+      autoplaySpeed: 1800
     };
 
     return (
