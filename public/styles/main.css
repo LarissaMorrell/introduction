@@ -87,9 +87,12 @@ header > .inner {
   display: inline-block;
   background-color: white;
   margin: 8px;
-  padding: 8px;
+  padding: 8px 8px 15px 8px;
   height: 250px;
   min-width: 165px;
+}
+.languages-panel {
+  padding: 10px;
 }
 img.language-logo {
   width: 100%;
