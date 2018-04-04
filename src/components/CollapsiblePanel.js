@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CollapsiblePanelContent from "./CollapsiblePanelContent.js";
 
 export default class CollapsiblePanel extends Component {
   constructor(props) {
@@ -6,8 +7,7 @@ export default class CollapsiblePanel extends Component {
     this.state = {
       //TODO add arrow for smaller screen size
       showContent: false,
-      panelContent: this.props.panelComponent,
-      showMoreDetails: false
+      panelContent: this.props.panelComponent
     };
   }
   addDetails() {
@@ -16,32 +16,25 @@ export default class CollapsiblePanel extends Component {
     });
     this.setState(newState);
   }
-  showMoreDetailsToggle() {
-    let newState = Object.assign({}, this.state, {
-      showMoreDetails: !this.state.showMoreDetails
-    });
-    this.setState(newState);
-  }
 
   render() {
     let showContent = this.state.showContent;
-    let content = (
-      <div className="collapsible-panel-details-container">
-        {showContent ? this.state.panelContent : null}
-        <button onClick={() => this.showMoreDetailsToggle()}>
-          {this.state.showMoreDetails ? "Show Less" : "Show More"}
-        </button>
-      </div>
-    );
 
+    //TODO fix font-awesome bug ... Why won't it work for fa icon?
     return (
       <div className="collapsible-panel">
-        <button onClick={() => this.addDetails()}>
+        <button className="collapse-button" onClick={() => this.addDetails()}>
           <h3>{this.props.title}</h3>
-          <span className="expand-icon">{showContent ? "-" : "+"}</span>
+          <span className="collapse-button-icon">
+            {showContent ? "-" : "+"}
+          </span>
         </button>
-        {showContent ? content : null}
+        {showContent ? (
+          <CollapsiblePanelContent content={this.state.panelContent} />
+        ) : null}
       </div>
     );
   }
+  // <i className={`fas fa-${showContent ? "minus" : "plus"}`} />
+  //<i className={`fas fa-${showContent ? "minus" : "plus"}`} />
 }

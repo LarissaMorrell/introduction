@@ -6,22 +6,18 @@ export default class SubNav extends Component {
       <div className="sub-nav">
         <nav>
           <a src="http://wayfair.com" alt="hi">
-            Bed & Bath
+            Wayfair
           </a>
-          <span>/</span>
+          <span className="slash-spacing">/</span>
           <a src="http://wayfair.com" alt="hi">
-            Bedding
+            Storefront Engineering
           </a>
-          <span>/</span>
+          <span className="slash-spacing">/</span>
           <a src="http://wayfair.com" alt="hi">
-            Blankets & Throws
+            Front & Back End
           </a>
-          <span>/</span>
-          <a src="http://wayfair.com" alt="hi">
-            Cotton Blankets
-          </a>
-          <span>/</span>
-          SKU: LRFY5773
+          <span className="slash-spacing">/</span>
+          SKU: PH9782764248
         </nav>
       </div>
     );

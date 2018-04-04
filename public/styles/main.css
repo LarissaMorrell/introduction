@@ -1,8 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font: 16px/1.5 "Josefin Sans", arial, sans-serif;
+  font: 17px/1.5 "Josefin Sans", arial, sans-serif;
   font-weight: 300;
+  /* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); */
+}
+a {
+  color: #3a7585;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+nav > a,
+nav > span {
+  color: #6f6f6f;
+  text-decoration: none;
 }
 .slick-next:before,
 .slick-prev:before {
@@ -25,7 +38,18 @@ body {
 .slick-next {
   right: 0;
 }
-
+.pricing {
+  color: #c93932;
+  font-size: 36px;
+  font-weight: 300;
+}
+nav {
+  padding: 15px;
+}
+.slash-spacing {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 header > .outer {
   color: #fff;
   background: #774a77;
@@ -69,20 +93,107 @@ header > .inner {
   display: inline-block;
   width: 50%;
 }
-
+#developer-info-container {
+  background: #fff;
+}
 .yellow-star {
   color: #fab863;
 }
 .gray-star {
   color: #dedede;
 }
+button.link-styling {
+  border: none;
+  background: none;
+  font: 16px "Josefin Sans", arial, sans-serif;
+  color: #3a7585;
+  text-decoration: underline;
+}
+button.link-styling:focus {
+  outline: none;
+}
+.partial-view {
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+#gradient {
+  /* border: black solid 2px; */
+  /* position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  height: 70px; /* adjust it to your needs */
+  width: 100%;
+  background: url(data:image/svg+xml;base64,alotofcodehere);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(70%, rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
 
 .collapsible-panel {
-  background-color: yellow;
+  background-color: #fff;
+  margin: 10px;
 }
 .collapsible-panel-details-container {
-  background-color: orange;
+  padding-left: 24px;
+  padding-right: 38px;
+  padding-bottom: 24px;
 }
+.collapsible-panel > button.collapse-button {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 38px;
+  text-align: left;
+  font: 14px "Josefin Sans", arial, sans-serif;
+  color: #221924;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.collapsible-panel > button.collapse-button:focus {
+  outline-color: #cddde1;
+  outline-style: solid;
+  outline-width: 3px;
+}
+button.collapse-button > * {
+  display: inline-block;
+}
+button.collapse-button > span.collapse-button-icon {
+  float: right;
+  margin-top: 15px;
+}
+
 .language-card-container {
   display: inline-block;
   background-color: white;
