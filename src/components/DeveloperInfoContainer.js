@@ -13,7 +13,32 @@ export default class DeveloperInfoContainer extends Component {
           </a>
         </p>
         <StarRating rating={[5]} />
-        <p className="pricing">$199.99</p>
+        <div>
+          <span className="pricing red-font">$199.99 </span>
+          <span className="strike-through">$100,000</span>
+          <span className="red-font"> 48% Off</span>
+        </div>
+        <div>
+          <span className="pricing red-font">Hire Today!</span>
+        </div>
+        <div className="delivery-info">
+          <img src="./media/delivery-truck.png" />
+          <p>FREE Next-Day Shipping!</p>
+        </div>
+        <div>Get Larissa by *date*! Order within *time*</div>
+        <div>
+          Ship To:
+          <button className="link-styling">
+            4 Copley Place, 7th floor, Boston, MA 02116
+          </button>
+        </div>
+        <div className="button-bar-sticky">
+          <button>
+            <i class="fa fa-heart" aria-hidden="true" />
+            Save
+          </button>
+          <button>Add to Cart</button>
+        </div>
       </div>
     );
   }

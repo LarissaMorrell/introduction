@@ -3,13 +3,21 @@ body {
   padding: 0;
   font: 17px/1.5 "Josefin Sans", arial, sans-serif;
   font-weight: 300;
-  /* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); */
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
-a {
+.App {
+  box-sizing: border-box;
+}
+a,
+button.link-styling {
+  font: 16px "Josefin Sans", arial, sans-serif;
   color: #3a7585;
+  text-shadow: 0 0 1px rgba(58, 117, 133, 0.2);
   text-decoration: underline;
+  margin-left: 5px;
 }
-a:hover {
+a:hover,
+button.link-styling:hover {
   text-decoration: none;
 }
 nav > a,
@@ -39,9 +47,15 @@ nav > span {
   right: 0;
 }
 .pricing {
-  color: #c93932;
   font-size: 36px;
   font-weight: 300;
+}
+.red-font {
+  color: #c93932;
+  text-shadow: 0 0 3px rgba(201, 57, 50, 0.3);
+}
+.strike-through {
+  text-decoration: line-through;
 }
 nav {
   padding: 15px;
@@ -95,6 +109,13 @@ header > .inner {
 }
 #developer-info-container {
   background: #fff;
+  padding: 15px 20px 20px 15px;
+  margin: 3px;
+  color: #6f6f6f;
+}
+#developer-info-container > h1 {
+  color: #221924;
+  margin-top: 0;
 }
 .yellow-star {
   color: #fab863;
@@ -105,9 +126,6 @@ header > .inner {
 button.link-styling {
   border: none;
   background: none;
-  font: 16px "Josefin Sans", arial, sans-serif;
-  color: #3a7585;
-  text-decoration: underline;
 }
 button.link-styling:focus {
   outline: none;
@@ -207,4 +225,13 @@ button.collapse-button > span.collapse-button-icon {
 }
 img.language-logo {
   width: 100%;
+}
+.delivery-info > p {
+  color: #1d781d;
+  text-shadow: 0 0 1px rgba(29, 120, 29, 0.2);
+  font-weight: 400;
+  padding-left: 40px;
+}
+.delivery-info > img {
+  position: absolute;
 }
