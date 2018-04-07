@@ -235,3 +235,33 @@ img.language-logo {
 .delivery-info > img {
   position: absolute;
 }
+#call-to-action {
+  background: #fff;
+  padding: 24px 0;
+  z-index: 10;
+}
+
+#call-to-action button {
+  font-size: 1rem;
+  border: 2px solid #774a77;
+  border-radius: 3px;
+  height: 50px;
+}
+button.primary {
+  background-color: #774a77;
+  color: #fff;
+}
+button.secondary {
+  background-color: #fff;
+  color: #774a77;
+}
+#call-to-action button.primary {
+  width: 60%;
+}
+#call-to-action button.secondary {
+  width: 38%;
+  margin-right: 8px;
+}
+button.full-width {
+  width: 100%;
+}

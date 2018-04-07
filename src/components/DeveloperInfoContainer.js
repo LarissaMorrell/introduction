@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CallToActionButtons from "./CallToActionButtons.js";
 import StarRating from "./StarRating.js";
 
 export default class DeveloperInfoContainer extends Component {
@@ -32,13 +33,7 @@ export default class DeveloperInfoContainer extends Component {
             4 Copley Place, 7th floor, Boston, MA 02116
           </button>
         </div>
-        <div className="button-bar-sticky">
-          <button>
-            <i class="fa fa-heart" aria-hidden="true" />
-            Save
-          </button>
-          <button>Add to Cart</button>
-        </div>
+        <CallToActionButtons />
       </div>
     );
   }
