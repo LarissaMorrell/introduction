@@ -7,6 +7,12 @@ body {
 }
 .App {
   box-sizing: border-box;
+  max-width: 100vw;
+  overflow: hidden;
+}
+button {
+  font: 16px "Josefin Sans", arial, sans-serif;
+  font-weight: 300;
 }
 a,
 button.link-styling {
@@ -60,7 +66,7 @@ nav > span {
 nav {
   padding: 15px;
 }
-.slash-spacing {
+.breadcrumb-spacing {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -80,15 +86,16 @@ header > .inner {
   font-size: 0.813rem;
 }
 
-.header-logo {
-  width: 134px;
-  height: 31px;
+header .header-logo {
+  width: 147px;
+  height: 34px;
 }
 .left-container {
   height: 100vh;
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
+  float: left;
+  width: calc(100% - 500px);
+  top: 0;
+  padding-bottom: 6px;
 }
 .sub-nav > nav {
   background-color: rgba(246, 244, 238, 0.6);
@@ -104,13 +111,13 @@ header > .inner {
 
 .right-container {
   background-color: #f6f4ee;
-  display: inline-block;
-  width: 50%;
+  float: right;
+  width: 500px;
 }
 #developer-info-container {
   background: #fff;
-  padding: 15px 20px 20px 15px;
-  margin: 3px;
+  padding: 15px 20px 10px 15px;
+  margin: 3px 3px 0 3px;
   color: #6f6f6f;
 }
 #developer-info-container > h1 {
@@ -127,7 +134,7 @@ button.link-styling {
   border: none;
   background: none;
 }
-button.link-styling:focus {
+button:focus {
   outline: none;
 }
 .partial-view {
@@ -217,9 +224,19 @@ button.collapse-button > span.collapse-button-icon {
   background-color: white;
   margin: 8px;
   padding: 8px 8px 15px 8px;
-  height: 250px;
+  height: 310px;
   min-width: 165px;
 }
+.language-card h3 {
+  font: 1.17em/1.5 "Josefin Sans", arial, sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+.language-card > .rating {
+  margin-bottom: 8px;
+}
+
 .languages-panel {
   padding: 10px;
 }
@@ -237,12 +254,14 @@ img.language-logo {
 }
 #call-to-action {
   background: #fff;
-  padding: 24px 0;
+  padding: 24px 20px;
   z-index: 10;
+  margin: 0 3px;
 }
-
-#call-to-action button {
-  font-size: 1rem;
+#call-to-action button,
+button.button-styling {
+  font: 1.17rem "Josefin Sans", arial, sans-serif;
+  font-weight: 300;
   border: 2px solid #774a77;
   border-radius: 3px;
   height: 50px;
@@ -251,9 +270,16 @@ button.primary {
   background-color: #774a77;
   color: #fff;
 }
+button.primary:hover {
+  background-color: #583658;
+}
 button.secondary {
   background-color: #fff;
   color: #774a77;
+  text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
+}
+button.secondary > .space-after-fa {
+  margin-right: 5px;
 }
 #call-to-action button.primary {
   width: 60%;
