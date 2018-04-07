@@ -14,6 +14,10 @@ export default class ThumbnailPreview extends Component {
   }
 
   render() {
-    return <div>{this.generateThumbnails(this.props.images)}</div>;
+    return (
+      <div className="thumbnail-image-container">
+        {this.generateThumbnails(this.props.images)}
+      </div>
+    );
   }
 }
