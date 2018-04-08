@@ -4,6 +4,7 @@ body {
   font: 17px/1.5 "Josefin Sans", arial, sans-serif;
   font-weight: 300;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
 }
 .App {
   box-sizing: border-box;
@@ -320,4 +321,40 @@ button.collapse-button > span.collapse-button-icon {
 
 img.language-logo {
   width: 100%;
+}
+
+/* Footer */
+footer {
+  box-sizing: border-box;
+  border-top: 1px solid #dedede;
+  display: block;
+  width: 100%;
+}
+footer .row {
+  max-width: 969px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: "";
+}
+
+.row::after {
+  clear: both;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer ul a {
+  margin-left: 0;
+}
+.col-3 {
+  width: 31%;
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
 }
