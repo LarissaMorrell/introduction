@@ -7,12 +7,10 @@ export default class LeftContainer extends Component {
   render() {
     return (
       <div className="left-container">
-        <div className="test" />
         <Sticky bottomBoundary={1200}>
           <SubNav />
           <CodePreviewContainer />
         </Sticky>
-        <div className="test" />
       </div>
     );
   }

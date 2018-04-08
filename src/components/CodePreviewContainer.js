@@ -30,11 +30,13 @@ export default class LeftContainer extends Component {
           changeImage={e => this.changeImage(e)}
           images={images}
         />
-        <img
-          className="large-image"
-          src={`media/${this.state.activeImage}`}
-          alt="headshot"
-        />
+        <div className="large-image-container">
+          <img
+            className="large-image"
+            src={`media/${this.state.activeImage}`}
+            alt="headshot"
+          />
+        </div>
       </div>
     );
   }

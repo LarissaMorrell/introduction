@@ -105,15 +105,24 @@ header .header-logo {
 }
 .thumbnail-image-container {
   width: 75px;
+  position: absolute;
+  top: 80px;
+  left: 10px;
 }
 .thumbnail-image {
   width: 56px;
   margin: 5px 10px;
 }
-
+.large-image-container {
+  position: absolute;
+  left: 80px;
+  top: 85px;
+  width: calc(100% - 80px);
+  text-align: center;
+}
 .large-image {
   width: 75%;
-  position: relative;
+  max-height: 85vh;
 }
 
 .right-container {
