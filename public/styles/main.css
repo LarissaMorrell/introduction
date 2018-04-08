@@ -126,14 +126,16 @@ header .header-logo {
 }
 
 .right-container {
+  box-sizing: border-box;
   background-color: #f6f4ee;
   float: right;
   width: 500px;
+  padding: 10px;
 }
 #developer-info-container {
   background: #fff;
   padding: 15px 20px 10px 15px;
-  margin: 3px 3px 0 3px;
+  margin: -7px -7px 0 -7px;
   color: #6f6f6f;
 }
 #developer-info-container > h1 {
@@ -204,7 +206,7 @@ button:focus {
 
 .collapsible-panel {
   background-color: #fff;
-  margin: 10px;
+  margin: 10px 0;
 }
 .collapsible-panel-details-container {
   padding-left: 24px;
@@ -272,7 +274,7 @@ img.language-logo {
   background: #fff;
   padding: 24px 20px;
   z-index: 10;
-  margin: 0 3px;
+  margin: 0 -7px;
 }
 #call-to-action button,
 button.button-styling {
