@@ -25,15 +25,54 @@ button.link-styling {
   text-decoration: underline;
   margin-left: 5px;
 }
+.red-font {
+  color: #c93932;
+  text-shadow: 0 0 3px rgba(201, 57, 50, 0.3);
+}
+.strike-through {
+  text-decoration: line-through;
+}
+.yellow-star {
+  color: #fab863;
+}
+.gray-star {
+  color: #dedede;
+}
+
+/* Buttons which have link styling */
+button.link-styling {
+  border: none;
+  background: none;
+}
+button:focus {
+  outline: none;
+}
 a:hover,
 button.link-styling:hover {
   text-decoration: none;
 }
-nav > a,
-nav > span {
-  color: #6f6f6f;
-  text-decoration: none;
+
+/* Buttons which have button styling */
+button.primary {
+  background-color: #774a77;
+  color: #fff;
 }
+button.primary:hover {
+  background-color: #583658;
+}
+button.secondary {
+  background-color: #fff;
+  color: #774a77;
+  text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
+}
+button.secondary > .space-after-fa {
+  margin-right: 5px;
+}
+button.full-width {
+  width: 100%;
+}
+
+/* Override the default styling of the slider carousel*/
 .slick-next:before,
 .slick-prev:before {
   color: black;
@@ -55,16 +94,12 @@ nav > span {
 .slick-next {
   right: 0;
 }
-.pricing {
-  font-size: 36px;
-  font-weight: 300;
-}
-.red-font {
-  color: #c93932;
-  text-shadow: 0 0 3px rgba(201, 57, 50, 0.3);
-}
-.strike-through {
-  text-decoration: line-through;
+
+/* Navigation Headers */
+nav > a,
+nav > span {
+  color: #6f6f6f;
+  text-decoration: none;
 }
 nav {
   padding: 15px;
@@ -88,11 +123,11 @@ header > .inner {
   padding: 8px;
   font-size: 0.813rem;
 }
-
 header .header-logo {
   width: 147px;
   height: 34px;
 }
+
 .left-container {
   height: 100vh;
   float: left;
@@ -100,27 +135,27 @@ header .header-logo {
   top: 0;
   padding-bottom: 6px;
 }
-.sub-nav > nav {
+.left-container .sub-nav > nav {
   background-color: rgba(246, 244, 238, 0.6);
 }
-.thumbnail-image-container {
+.left-container div.thumbnail-image-container {
   width: 75px;
   position: absolute;
   top: 80px;
   left: 10px;
 }
-.thumbnail-image {
+.left-container img.thumbnail-image {
   width: 56px;
   margin: 5px 10px;
 }
-.large-image-container {
+.left-container div.large-image-container {
   position: absolute;
   left: 80px;
   top: 85px;
   width: calc(100% - 80px);
   text-align: center;
 }
-.large-image {
+div.large-image-container > img.large-image {
   width: 75%;
   max-height: 85vh;
 }
@@ -142,19 +177,45 @@ header .header-logo {
   color: #221924;
   margin-top: 0;
 }
-.yellow-star {
-  color: #fab863;
+#developer-info-container .pricing {
+  font-size: 36px;
+  font-weight: 300;
 }
-.gray-star {
-  color: #dedede;
+
+#developer-info-container .delivery-info > p {
+  color: #1d781d;
+  text-shadow: 0 0 1px rgba(29, 120, 29, 0.2);
+  font-weight: 400;
+  padding-left: 40px;
 }
-button.link-styling {
-  border: none;
-  background: none;
+#developer-info-container .delivery-info > img {
+  position: absolute;
 }
-button:focus {
-  outline: none;
+
+/* Call to Action Buttons, Sticky on RightContainer */
+#call-to-action {
+  background: #fff;
+  padding: 24px 20px;
+  z-index: 10;
+  margin: 0 -7px;
 }
+#call-to-action button,
+button.button-styling {
+  font: 1.17rem "Josefin Sans", arial, sans-serif;
+  font-weight: 300;
+  border: 2px solid #774a77;
+  border-radius: 3px;
+  height: 50px;
+}
+
+#call-to-action button.primary {
+  width: 60%;
+}
+#call-to-action button.secondary {
+  width: 38%;
+  margin-right: 8px;
+}
+
 .partial-view {
   max-height: 200px;
   overflow: hidden;
@@ -204,6 +265,7 @@ button:focus {
   );
 }
 
+/* Collapsible Panels */
 .collapsible-panel {
   background-color: #fff;
   margin: 10px 0;
@@ -237,6 +299,7 @@ button.collapse-button > span.collapse-button-icon {
   margin-top: 15px;
 }
 
+/* Carousel Slider Content */
 .language-card-container {
   display: inline-block;
   background-color: white;
@@ -255,57 +318,6 @@ button.collapse-button > span.collapse-button-icon {
   margin-bottom: 8px;
 }
 
-.languages-panel {
-  padding: 10px;
-}
 img.language-logo {
-  width: 100%;
-}
-.delivery-info > p {
-  color: #1d781d;
-  text-shadow: 0 0 1px rgba(29, 120, 29, 0.2);
-  font-weight: 400;
-  padding-left: 40px;
-}
-.delivery-info > img {
-  position: absolute;
-}
-#call-to-action {
-  background: #fff;
-  padding: 24px 20px;
-  z-index: 10;
-  margin: 0 -7px;
-}
-#call-to-action button,
-button.button-styling {
-  font: 1.17rem "Josefin Sans", arial, sans-serif;
-  font-weight: 300;
-  border: 2px solid #774a77;
-  border-radius: 3px;
-  height: 50px;
-}
-button.primary {
-  background-color: #774a77;
-  color: #fff;
-}
-button.primary:hover {
-  background-color: #583658;
-}
-button.secondary {
-  background-color: #fff;
-  color: #774a77;
-  text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
-}
-button.secondary > .space-after-fa {
-  margin-right: 5px;
-}
-#call-to-action button.primary {
-  width: 60%;
-}
-#call-to-action button.secondary {
-  width: 38%;
-  margin-right: 8px;
-}
-button.full-width {
   width: 100%;
 }
