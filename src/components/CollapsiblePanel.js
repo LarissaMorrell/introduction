@@ -25,7 +25,7 @@ export default class CollapsiblePanel extends Component {
       <div className="collapsible-panel">
         <button className="collapse-button" onClick={() => this.addDetails()}>
           <h3>{this.props.title}</h3>
-          <span className="collapse-button-icon">
+          <span className="collapse-button-icon black-font">
             {showContent ? "-" : "+"}
           </span>
         </button>

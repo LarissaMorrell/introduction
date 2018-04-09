@@ -3,6 +3,25 @@ import StarRating from "./StarRating.js";
 
 export default class DeveloperInfoContainer extends Component {
   render() {
+    let monthArr = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+    let dayArr = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+    let tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    let day = tomorrow.getDay();
+    let month = tomorrow.getMonth();
+    let date = tomorrow.getDate();
     return (
       <div id="developer-info-container">
         <h1>Full Stack Developer</h1>
@@ -25,7 +44,12 @@ export default class DeveloperInfoContainer extends Component {
           <img src="./media/delivery-truck.png" />
           <p>FREE Next-Day Shipping!</p>
         </div>
-        <div>Get Larissa by *date*! Order within *time*</div>
+        <div>
+          Get Larissa by
+          <span className="black-font">
+            {` ${dayArr[day]}, ${monthArr[month]} ${date}`}
+          </span>
+        </div>
         <div>
           Ship To:
           <button className="link-styling">
