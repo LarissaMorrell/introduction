@@ -5,7 +5,6 @@ export default class CollapsiblePanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      //TODO add arrow for smaller screen size
       showContent: false,
       panelContent: this.props.panelComponent
     };
@@ -26,7 +25,19 @@ export default class CollapsiblePanel extends Component {
         <button className="collapse-button" onClick={() => this.addDetails()}>
           <h3>{this.props.title}</h3>
           <span className="collapse-button-icon black-font">
-            {showContent ? "-" : "+"}
+            {showContent ? (
+              <img
+                className="collapse-icon"
+                src="./media/minus.png"
+                alt="collapse"
+              />
+            ) : (
+              <img
+                className="collapse-icon"
+                src="./media/plus.png"
+                alt="expand"
+              />
+            )}
           </span>
         </button>
         {showContent ? (
@@ -35,6 +46,4 @@ export default class CollapsiblePanel extends Component {
       </div>
     );
   }
-  // <i className={`fas fa-${showContent ? "minus" : "plus"}`} />
-  //<i className={`fas fa-${showContent ? "minus" : "plus"}`} />
 }
