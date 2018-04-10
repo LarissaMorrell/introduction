@@ -263,7 +263,7 @@ button.collapse-button > span.collapse-button-icon {
   margin-top: 6px;
   height: 10px;
 }
-.collapsible-panel .partial-view {
+.collapsible-panel-details-container > .partial-view {
   max-height: 200px;
   overflow: hidden;
   margin-bottom: -75px;

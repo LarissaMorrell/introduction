@@ -22,7 +22,7 @@ export default class CollapsiblePanel extends Component {
         <div className={showingDetails ? "full-view" : "partial-view"}>
           {this.props.content}
         </div>
-        {showingDetails ? null : <div id="gradient" />}
+        {showingDetails ? null : <div id="partial-view-gradient" />}
         <button
           className="link-styling"
           onClick={() => this.showingDetailsToggle()}
