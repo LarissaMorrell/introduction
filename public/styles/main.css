@@ -113,6 +113,7 @@ nav > span {
 }
 nav {
   padding: 15px;
+  /* direction: rtl; */
 }
 .breadcrumb-spacing {
   padding-left: 10px;
@@ -126,16 +127,31 @@ header > .outer {
   font-size: 0.813rem;
 }
 header > .inner {
+  box-sizing: border-box;
   color: #000;
   background: #fff;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   padding: 8px;
   font-size: 0.813rem;
 }
+/* header > .inner {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  max-width: 1640px;
+  margin: 0 auto;
+} */
 header .header-logo {
-  width: 147px;
-  height: 34px;
+  position: relative;
+  top: 9px;
+  width: 103px;
+  height: 26px;
 }
 
 .left-container {
@@ -269,9 +285,7 @@ button.collapse-button > span.collapse-button-icon {
   margin-bottom: -75px;
 }
 #partial-view-gradient {
-  /* border: black solid 2px; */
   position: relative;
-  /* top: -75px; */
   height: 75px;
   width: 100%;
   background: url(data:image/svg+xml;base64,alotofcodehere);
