@@ -4,18 +4,17 @@ export default class AboutEducation extends Component {
   render() {
     return (
       <div>
+        <h3>Thinkful</h3>
+        <h4>Full Stack Web Development</h4>
         <p>
-          Pull one of these openwork end tables up to a cozy arm chair for a
-          classic reading nook, or set one next to the tub as a catch-all for
-          shampoos and folded washcloths.
+          Completed intensive course on modern full stack web development.
+          Learning industry best practices and practical software development
+          standards by collaborating several hours each week with a senior web
+          developer. Technologies include HTML5, CSS3, JavaScript/ES6, jQuery,
+          React, Redux, Node, Express, MongoDB, and Mongoose. Unit and
+          integration tests used Mocha, Chai, Jest, and Enzyme. Projects have
+          also used APIs, GIT, and GitHub.
         </p>
-        <h3>Features</h3>
-        <ul>
-          <li>Friendly</li>
-          <li>Smart</li>
-          <li>Funny</li>
-          <li>Learner</li>
-        </ul>
       </div>
     );
   }

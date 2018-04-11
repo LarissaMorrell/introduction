@@ -6,7 +6,8 @@ export default class CollapsiblePanel extends Component {
     super(props);
     this.state = {
       showContent: false,
-      panelContent: this.props.panelComponent
+      panelContent: this.props.panelComponent,
+      height: 0
     };
   }
   addDetails() {
@@ -15,13 +16,24 @@ export default class CollapsiblePanel extends Component {
     });
     this.setState(newState);
   }
+  getHeight() {
+    const height = this.divElement.clientHeight;
+    this.setState({ height });
+  }
+
+  componentDidMount() {
+    this.getHeight();
+    console.log(this.state.height);
+  }
 
   render() {
     let showContent = this.state.showContent;
 
-    //TODO fix font-awesome bug ... Why won't it work for fa icon?
     return (
-      <div className="collapsible-panel">
+      <div
+        className="collapsible-panel"
+        ref={divElement => (this.divElement = divElement)}
+      >
         <button className="collapse-button" onClick={() => this.addDetails()}>
           <h3>{this.props.title}</h3>
           <span className="collapse-button-icon black-font">

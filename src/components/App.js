@@ -9,8 +9,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <LeftContainer className="left-container" />
-        <RightContainer className="right-container" />
+        <div className="main-content">
+          <LeftContainer />
+          <RightContainer />
+        </div>
         <Footer />
       </div>
     );
