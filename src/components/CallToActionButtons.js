@@ -7,7 +7,7 @@ export default class CallToActionButtons extends Component {
       <Sticky bottomBoundary={1200}>
         <div id="call-to-action">
           <a
-            className="button-styling secondary-button"
+            className="button-styling secondary-button secondary-purple-button"
             href="mailto:larissa@larissamorrell.com?Subject=Wayfair%20is%20Interested"
             alt="email Larissa"
           >

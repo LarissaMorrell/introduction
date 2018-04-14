@@ -16,7 +16,7 @@ export default class LanguageCard extends Component {
           className="primary-button full-width button-styling"
           href="https://github.com/LarissaMorrell"
           alt="git hub portfolio"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >
           View
         </a>

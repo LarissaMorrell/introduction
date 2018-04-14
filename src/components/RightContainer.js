@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import DevInfoContainer from "./DevInfoContainer.js";
 import CallToActionButtons from "./CallToActionButtons.js";
-import ReviewsContainer from "./ReviewsContainer.js";
 import AboutLarissaContainer from "./AboutLarissaContainer.js";
 import LanguagesPanel from "./LanguagesPanel.js";
+import PhoneQuestions from "./PhoneQuestions.js";
 import Video from "./Video.js";
 
 export default class RightContainer extends Component {
@@ -12,9 +12,9 @@ export default class RightContainer extends Component {
       <div className="right-container">
         <DevInfoContainer />
         <CallToActionButtons />
-        <ReviewsContainer />
         <AboutLarissaContainer />
         <LanguagesPanel />
+        <PhoneQuestions />
         <Video />
       </div>
     );

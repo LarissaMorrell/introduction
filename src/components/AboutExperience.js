@@ -20,7 +20,7 @@ export default class AboutExperience extends Component {
             <a
               href="https://www.donorschoose.org/fundingsupport"
               alt="Larissa's Donors Choose"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               DonorsChoose.org
             </a>.

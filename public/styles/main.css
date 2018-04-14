@@ -70,6 +70,10 @@ button.link-styling:hover {
 }
 
 /* Buttons and links which have button styling */
+button {
+  height: 50px;
+  border-radius: 3px;
+}
 .primary-button {
   background-color: #774a77;
   color: #fff;
@@ -79,14 +83,21 @@ button.link-styling:hover {
 }
 .secondary-button {
   background-color: #fff;
-  color: #774a77;
-  text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
 }
 .secondary-button > .space-after-fa {
   margin-right: 5px;
 }
 .secondary-button:hover {
   background-color: #faf9f7;
+}
+.secondary-purple-button {
+  color: #774a77;
+  text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
+}
+.secondary-green-button {
+  color: #3a7585;
+  text-shadow: 0 0 2px rgba(58, 117, 133, 0.3);
+  border: 2px solid #3a7585;
 }
 .full-width {
   width: 100%;
@@ -358,6 +369,19 @@ div.about-container p {
 }
 div.about-container span.dates {
   float: right;
+}
+
+/* Phone Questions */
+.phone-questions-container {
+  background-color: #fff;
+  margin: 40px 0 30px 0;
+  padding: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+.phone-questions-container > button {
+  width: 100%;
+  margin-top: 16px;
 }
 
 /* Carousel Slider Content */

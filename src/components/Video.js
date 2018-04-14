@@ -8,9 +8,9 @@ export default class RightContainer extends Component {
           width="473"
           height="266"
           src="https://www.youtube.com/embed/-uMbvR4cq74?rel=0&amp;showinfo=0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          title="working at wayfair"
         />
       </div>
     );
