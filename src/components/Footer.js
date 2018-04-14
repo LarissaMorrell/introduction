@@ -17,22 +17,41 @@ export default class Footer extends Component {
             </ul>
           </div>
           <div className="col-3">
-            <h2>Wishlist</h2>
+            <h2>Recent Adventures</h2>
             <ul>
               <li>
-                <a href="larissamorrell.com">Place holder</a>
+                <a href="https://ridabockglass.com/" alt="Luke Adams Glass">
+                  Glassblowing Lessons
+                </a>
               </li>
               <li>
-                <a href="larissamorrell.com">Place holder</a>
+                <a href="https://getaway.house/" alt="Getaway">
+                  Tiny House Forest Getaway
+                </a>
               </li>
               <li>
-                <a href="larissamorrell.com">Place holder</a>
+                <a
+                  href="http://whataboutus.pinkspage.com/"
+                  alt="beautiful trauma tour"
+                >
+                  P!nk in Concert
+                </a>
               </li>
               <li>
-                <a href="larissamorrell.com">Place holder</a>
+                <a
+                  href="http://www.mysterylounge.com/Home.html"
+                  alt="Mystery Lounge"
+                >
+                  Magic Comedy Shows
+                </a>
               </li>
               <li>
-                <a href="larissamorrell.com">Place holder</a>
+                <a
+                  href="https://www.attitash.com/ziptour/"
+                  alt="Attitash Ziplining"
+                >
+                  Ziplining in NH
+                </a>
               </li>
             </ul>
           </div>

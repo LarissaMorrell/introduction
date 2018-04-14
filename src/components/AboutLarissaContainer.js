@@ -15,7 +15,7 @@ export default class AboutLarissaContainer extends Component {
           panelComponent={<AboutEducation />}
         />
         <CollapsiblePanel
-          title="Work Experience"
+          title="Bringing a Unique Perspective..."
           panelComponent={<AboutExperience />}
         />
       </div>
