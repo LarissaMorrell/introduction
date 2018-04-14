@@ -32,7 +32,7 @@ export default class Footer extends Component {
               <li>
                 <a
                   href="http://whataboutus.pinkspage.com/"
-                  alt="beautiful trauma tour"
+                  alt="pink beautiful trauma tour"
                 >
                   P!nk in Concert
                 </a>
