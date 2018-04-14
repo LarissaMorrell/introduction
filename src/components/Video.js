@@ -5,7 +5,7 @@ export default class RightContainer extends Component {
     return (
       <div className="video-container">
         <iframe
-          width="475"
+          width="473"
           height="266"
           src="https://www.youtube.com/embed/-uMbvR4cq74?rel=0&amp;showinfo=0"
           frameborder="0"
