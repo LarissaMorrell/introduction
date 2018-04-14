@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DeveloperInfoContainer from "./DeveloperInfoContainer.js";
+import DevInfoContainer from "./DevInfoContainer.js";
 import CallToActionButtons from "./CallToActionButtons.js";
 import ReviewsContainer from "./ReviewsContainer.js";
 import AboutLarissaContainer from "./AboutLarissaContainer.js";
@@ -9,7 +9,7 @@ export default class RightContainer extends Component {
   render() {
     return (
       <div className="right-container">
-        <DeveloperInfoContainer />
+        <DevInfoContainer />
         <CallToActionButtons />
         <ReviewsContainer />
         <AboutLarissaContainer />

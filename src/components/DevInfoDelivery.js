@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import StarRating from "./StarRating.js";
 
-export default class DeveloperInfoContainer extends Component {
+export default class DevInfoPricing extends Component {
   render() {
     let monthArr = [
       "January",
@@ -23,23 +22,7 @@ export default class DeveloperInfoContainer extends Component {
     let month = tomorrow.getMonth();
     let date = tomorrow.getDate();
     return (
-      <div id="developer-info-container">
-        <h1>Full Stack Developer</h1>
-        <p>
-          by
-          <a href="https://larissamorrell.com" alt="larissa's portfolio">
-            Larissa Morrell
-          </a>
-        </p>
-        <StarRating rating={[5]} />
-        <div>
-          <span className="pricing red-font">$199.99 </span>
-          <span className="strike-through">$100,000</span>
-          <span className="red-font"> 48% Off</span>
-        </div>
-        <div>
-          <span className="pricing red-font">Hire Today!</span>
-        </div>
+      <div>
         <div className="delivery-info">
           <img src="./media/delivery-truck.png" />
           <p>FREE Next-Day Shipping!</p>
@@ -52,9 +35,12 @@ export default class DeveloperInfoContainer extends Component {
         </div>
         <div>
           Ship To:
-          <button className="link-styling">
+          <a
+            href="https://www.google.com/maps/dir/1135+Main+St,+Reading,+MA+01867/4+Copley+Pl+7th+floor,+Boston,+MA+02116/@42.4413758,-71.2135469,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89e30b7be4535a9d:0x51c1e35d3cef762a!2m2!1d-71.1038643!2d42.544497!1m5!1m1!1s0x89e37a0de91b2d5f:0xf2643a08a644865!2m2!1d-71.0783565!2d42.3471179!3e0"
+            target="_blank"
+          >
             4 Copley Place, 7th floor, Boston, MA 02116
-          </button>
+          </a>
         </div>
       </div>
     );

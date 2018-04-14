@@ -5,9 +5,13 @@ export default function StarRating(props) {
     let starRating = [];
     for (let i = 0; i < 5; i++) {
       if (i < rating) {
-        starRating.push(<span className="fas fa-star yellow-star" key={i} />);
+        starRating.push(
+          <span className="fas fa-star yellow-star lg-size" key={i} />
+        );
       } else {
-        starRating.push(<span className="fas fa-star gray-star" key={i} />);
+        starRating.push(
+          <span className="fas fa-star gray-star lg-size" key={i} />
+        );
       }
     }
     return starRating;

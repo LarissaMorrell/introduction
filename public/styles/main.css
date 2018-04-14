@@ -82,6 +82,9 @@ button.link-styling:hover {
 .secondary-button > .space-after-fa {
   margin-right: 5px;
 }
+.secondary-button:hover {
+  background-color: #faf9f7;
+}
 .full-width {
   width: 100%;
 }
@@ -216,13 +219,22 @@ div.large-image-container > img.large-image {
 }
 #developer-info-container > h1 {
   color: #221924;
-  margin-top: 0;
+  margin: 0 0 10px 0;
 }
-#developer-info-container .pricing {
+#developer-info-container > p {
+  margin: 0 0 10px 0;
+}
+#developer-info-container .dev-pricing-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#developer-info-container .pricing-text {
   font-size: 36px;
   font-weight: 300;
 }
-
+#developer-info-container .lg-size {
+  font-size: 25px;
+}
 #developer-info-container .delivery-info > p {
   color: #1d781d;
   text-shadow: 0 0 1px rgba(29, 120, 29, 0.2);
