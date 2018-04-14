@@ -303,7 +303,7 @@ button.collapse-button > span.collapse-button-icon {
   height: 10px;
 }
 .collapsible-panel-details-container > .partial-view {
-  max-height: 200px;
+  max-height: 275px;
   overflow: hidden;
   margin-bottom: -75px;
 }
@@ -345,19 +345,18 @@ button.collapse-button > span.collapse-button-icon {
     rgba(255, 255, 255, 1) 70%
   );
 }
-div.about-education-container {
+div.about-container {
   margin-bottom: 25px;
 }
-div.about-education-container h3,
-div.about-education-container h4,
-div.about-education-container p {
+div.about-container h3,
+div.about-container h4,
+div.about-container p {
   margin: 10px 5px;
 }
-
-div.about-education-container p {
+div.about-container p {
   color: #6f6f6f;
 }
-div.about-education-container span.dates {
+div.about-container span.dates {
   float: right;
 }
 
