@@ -57,7 +57,7 @@ export default class Footer extends Component {
           </div>
           <div className="col-3">
             <h2>Contact Her</h2>
-            <button>
+            <button className="secondary-button">
               <i className="fas fa-phone" /> Call Her
             </button>
             <ul>
