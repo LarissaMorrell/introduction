@@ -5,13 +5,11 @@ export default class AboutEducation extends Component {
     return (
       <div className="about-education-container">
         <div>
-          <div className="title-banner">
-            <h3>Full Stack Web Development</h3>
-            <h4>
-              Thinkful
-              <span className="dates">2017-2018</span>
-            </h4>
-          </div>
+          <h3>Full Stack Web Development</h3>
+          <h4>
+            Thinkful
+            <span className="dates">2017-2018</span>
+          </h4>
           <p>
             Completed intensive course on modern full stack web development.
             Learning industry best practices and practical software development
