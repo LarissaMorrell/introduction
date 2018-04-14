@@ -12,7 +12,14 @@ export default class LanguageCard extends Component {
         />
         <h3>{this.props.language}</h3>
         <StarRating rating={[this.props.rating]} />
-        <button className="primary full-width button-styling">View</button>
+        <a
+          className="primary-button full-width button-styling"
+          href="https://github.com/LarissaMorrell"
+          alt="git hub portfolio"
+          target="_blank"
+        >
+          View
+        </a>
       </div>
     );
   }

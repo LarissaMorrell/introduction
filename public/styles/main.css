@@ -66,26 +66,37 @@ button.link-styling:hover {
   text-decoration: none;
 }
 
-/* Buttons which have button styling */
-button.primary {
+/* Buttons and links which have button styling */
+.primary-button {
   background-color: #774a77;
   color: #fff;
 }
-button.primary:hover {
+.primary-button:hover {
   background-color: #583658;
 }
-button.secondary {
+.secondary-button {
   background-color: #fff;
   color: #774a77;
   text-shadow: 0 0 2px rgba(119, 74, 119, 0.3);
 }
-button.secondary > .space-after-fa {
+.secondary-button > .space-after-fa {
   margin-right: 5px;
 }
-button.full-width {
+.full-width {
   width: 100%;
 }
-
+a.button-styling {
+  font: 1.17rem "Josefin Sans", arial, sans-serif;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0;
+  border: 2px solid #774a77;
+  margin-left: -2px;
+  border-radius: 3px;
+}
 /* Override the default styling of the slider carousel*/
 .slick-next:before,
 .slick-prev:before {
@@ -229,20 +240,13 @@ div.large-image-container > img.large-image {
   z-index: 10;
   margin: 0 -7px;
 }
-#call-to-action button,
-button.button-styling {
-  font: 1.17rem "Josefin Sans", arial, sans-serif;
-  font-weight: 300;
-  border: 2px solid #774a77;
-  border-radius: 3px;
-  height: 50px;
-}
-
-#call-to-action button.primary {
+#call-to-action .primary-button {
+  display: inline-block;
   width: 60%;
 }
-#call-to-action button.secondary {
-  width: 38%;
+#call-to-action .secondary-button {
+  display: inline-block;
+  width: 36%;
   margin-right: 8px;
 }
 
@@ -388,4 +392,11 @@ footer ul {
   float: left;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-container {
+    width: 100vw;
+    height: initial;
+  }
 }
