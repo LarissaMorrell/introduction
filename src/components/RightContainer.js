@@ -4,6 +4,7 @@ import CallToActionButtons from "./CallToActionButtons.js";
 import ReviewsContainer from "./ReviewsContainer.js";
 import AboutLarissaContainer from "./AboutLarissaContainer.js";
 import LanguagesPanel from "./LanguagesPanel.js";
+import Video from "./Video.js";
 
 export default class RightContainer extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class RightContainer extends Component {
         <ReviewsContainer />
         <AboutLarissaContainer />
         <LanguagesPanel />
+        <Video />
       </div>
     );
   }

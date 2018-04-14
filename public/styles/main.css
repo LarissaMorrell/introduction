@@ -383,6 +383,13 @@ img.language-logo {
   width: 100%;
 }
 
+/* Video */
+.video-container {
+  width: 475px;
+  margin: 30px auto 0 auto;
+  border-radius: 3px;
+}
+
 /* Footer */
 footer {
   box-sizing: border-box;
