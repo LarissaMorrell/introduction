@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SocialMediaIcon from "./SocialMediaIcon.js";
 
 export default class Footer extends Component {
   render() {
@@ -42,12 +43,28 @@ export default class Footer extends Component {
             </button>
             <ul>
               <li>
-                Portfolio:
+                Portfolio:{` `}
                 <a href="https://larissamorrell.com">LarissaMorrell.com</a>
               </li>
-              <li>placeholder</li>
-              <li>placeholder</li>
-              <li>placeholder</li>
+              <li>
+                Email: {` `}
+                <a
+                  href="mailto:larissa@larissamorrell.com?Subject=Wayfair%20is%20Interested"
+                  alt="email Larissa"
+                >
+                  larissa@larissamorrell.com
+                </a>
+              </li>
+              <li>
+                <SocialMediaIcon
+                  name="linkedin"
+                  link="https://www.linkedin.com/in/larissamorrell/"
+                />
+                <SocialMediaIcon
+                  name="github"
+                  link="https://github.com/LarissaMorrell"
+                />
+              </li>
             </ul>
           </div>
         </div>
