@@ -16,7 +16,8 @@ export default class AboutSkills extends Component {
       "Mongoose",
       "Chai",
       "Mocha",
-      "Jest"
+      "Jest",
+      "Git"
     ];
     return (
       <div className="skills-container">
