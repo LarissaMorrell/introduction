@@ -17,6 +17,22 @@ export default class Navbar extends Component {
                   alt="wayfair logo"
                 />
               </a>
+              <div className="float-right">
+                <input type="search" placeholder="Insert dreams quote here" />
+                <button className="camera-search secondary-purple-button">
+                  <i class="fas fa-camera" />
+                </button>
+                <ul>
+                  <li>
+                    <i class="fa fa-user" aria-hidden="true" />
+                    <span> Profile</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-shopping-cart" />
+                    <span> Cart</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </header>
@@ -24,3 +40,6 @@ export default class Navbar extends Component {
     );
   }
 }
+// <div className="magnifying-glass">
+//   <i class="fas fa-search" />
+// </div>
