@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SocialMediaIcon from "./SocialMediaIcon.js";
+import CallButton from "./CallButton.js";
 
 export default class Footer extends Component {
   render() {
@@ -59,9 +60,7 @@ export default class Footer extends Component {
             <h2>Contact Her</h2>
             <ul>
               <li>
-                <button className="secondary-button secondary-green-button">
-                  <i className="fas fa-phone" /> Call Her
-                </button>
+                <CallButton />
                 <div className="social-media-icon-container">
                   <SocialMediaIcon
                     name="linkedin"

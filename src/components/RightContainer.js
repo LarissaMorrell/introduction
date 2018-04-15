@@ -3,7 +3,7 @@ import DevInfoContainer from "./DevInfoContainer.js";
 import CallToActionButtons from "./CallToActionButtons.js";
 import AboutLarissaContainer from "./AboutLarissaContainer.js";
 import LanguagesPanel from "./LanguagesPanel.js";
-import PhoneQuestions from "./PhoneQuestions.js";
+import CallWithQuestions from "./CallWithQuestions.js";
 // import Video from "./Video.js";
 
 export default class RightContainer extends Component {
@@ -35,7 +35,7 @@ export default class RightContainer extends Component {
         <CallToActionButtons />
         <AboutLarissaContainer />
         <LanguagesPanel windowWidth={this.state.width} />
-        <PhoneQuestions />
+        <CallWithQuestions />
       </div>
     );
   }
