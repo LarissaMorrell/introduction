@@ -136,6 +136,9 @@ a.button-styling {
 .slick-next {
   right: 0;
 }
+.slick-list {
+  height: 150px;
+}
 
 /* Navigation Headers */
 nav > a,
@@ -390,8 +393,7 @@ div.about-container span.dates {
   background-color: white;
   margin: 8px;
   padding: 8px 8px 15px 8px;
-  height: 310px;
-  min-width: 165px;
+  min-width: 150px;
 }
 .language-card h3 {
   font: 1.17em/1.5 "Josefin Sans", arial, sans-serif;
@@ -469,5 +471,11 @@ footer ul {
   }
   .right-container {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .language-card-container {
+    min-width: 130px;
   }
 }
