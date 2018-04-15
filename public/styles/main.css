@@ -377,6 +377,7 @@ div.about-container p {
 }
 div.about-container p {
   color: #6f6f6f;
+  margin-bottom: 15px;
 }
 div.about-container span.dates {
   float: right;
