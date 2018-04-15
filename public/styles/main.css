@@ -464,6 +464,10 @@ footer ul {
 @media only screen and (max-width: 768px) {
   .left-container {
     width: 100vw;
-    height: initial;
+    height: 500px;
+    clear: left;
+  }
+  .right-container {
+    width: 100%;
   }
 }

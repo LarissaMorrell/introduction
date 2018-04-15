@@ -17,17 +17,11 @@ export default class LeftContainer extends Component {
     this.setState({ width: width });
   }
 
-  /**
-   * Add event listener
-   */
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
   }
 
-  /**
-   * Remove event listener
-   */
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateWindowDimensions);
   }
@@ -35,7 +29,7 @@ export default class LeftContainer extends Component {
   render() {
     return (
       <div className="left-container">
-        <Sticky enabled={this.state.width > 600} bottomBoundary={1200}>
+        <Sticky enabled={this.state.width > 768} bottomBoundary={1200}>
           <SubNav />
           <CodePreviewContainer />
         </Sticky>

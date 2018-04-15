@@ -7,14 +7,14 @@ export default class LanguagesPanel extends Component {
     let settings = {
       arrows: true,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow: this.props.windowWidth > 768 ? 5 : 3,
       slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode: false,
       autoplay: true,
       autoplaySpeed: 1800
     };
-
+    console.log(settings.slidesToShow);
     return (
       <Slider {...settings} className="languages-panel">
         <div className="language-card-container">
