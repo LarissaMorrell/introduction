@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 col-md-2 col-sm-1">
             <h2>Streaming Now...</h2>
             <ul>
               <li>Black Mirror</li>
@@ -16,7 +16,7 @@ export default class Footer extends Component {
               <li>Orange is the New Black</li>
             </ul>
           </div>
-          <div className="col-3">
+          <div className="col-3 col-md-2 col-sm-1">
             <h2>Recent Adventures</h2>
             <ul>
               <li>
@@ -55,12 +55,24 @@ export default class Footer extends Component {
               </li>
             </ul>
           </div>
-          <div className="col-3">
+          <div className="col-3 col-md-2 col-sm-1">
             <h2>Contact Her</h2>
-            <button className="secondary-button">
-              <i className="fas fa-phone" /> Call Her
-            </button>
             <ul>
+              <li>
+                <button className="secondary-button secondary-green-button">
+                  <i className="fas fa-phone" /> Call Her
+                </button>
+                <div className="social-media-icon-container">
+                  <SocialMediaIcon
+                    name="linkedin"
+                    link="https://www.linkedin.com/in/larissamorrell/"
+                  />
+                  <SocialMediaIcon
+                    name="github"
+                    link="https://github.com/LarissaMorrell"
+                  />
+                </div>
+              </li>
               <li>
                 Portfolio:{` `}
                 <a href="https://larissamorrell.com">LarissaMorrell.com</a>
@@ -74,21 +86,12 @@ export default class Footer extends Component {
                   larissa@larissamorrell.com
                 </a>
               </li>
-              <li>
-                <SocialMediaIcon
-                  name="linkedin"
-                  link="https://www.linkedin.com/in/larissamorrell/"
-                />
-                <SocialMediaIcon
-                  name="github"
-                  link="https://github.com/LarissaMorrell"
-                />
-              </li>
+              <li />
             </ul>
           </div>
         </div>
         <div className="row footer-fine-print">
-          <p>Easy commute to Boston from Reading, MA</p>
+          Easy commute to Boston from Reading, MA
         </div>
       </footer>
     );
