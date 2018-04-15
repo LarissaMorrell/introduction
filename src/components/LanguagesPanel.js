@@ -7,7 +7,7 @@ export default class LanguagesPanel extends Component {
     let settings = {
       arrows: true,
       infinite: true,
-      slidesToShow: this.props.windowWidth > 768 ? 5 : 7,
+      slidesToShow: this.props.windowWidth > 768 ? 3 : 4,
       slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode: false,
@@ -50,9 +50,9 @@ export default class LanguagesPanel extends Component {
       }
     ];
 
-    let slides = cards.map(card => {
+    let slides = cards.map((card, i) => {
       return (
-        <div className="language-card-container">
+        <div className="language-card-container" key={i}>
           <LanguageCard language={card.language} rating={card.rating} />
         </div>
       );
