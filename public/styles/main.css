@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   max-width: 100vw;
   overflow: hidden;
+  min-width: 300px;
 }
 .main-content {
   overflow: hidden;
@@ -138,6 +139,11 @@ a.button-styling {
 }
 .slick-list {
   height: 150px;
+}
+.slick-slide {
+  margin-left: 30px;
+  border-radius: 3px;
+  min-width: 128px;
 }
 
 /* Navigation Headers */
@@ -359,6 +365,8 @@ button.collapse-button > span.collapse-button-icon {
     rgba(255, 255, 255, 1) 70%
   );
 }
+
+/* Collapsible About_ Components */
 div.about-container {
   margin-bottom: 25px;
 }
@@ -372,6 +380,15 @@ div.about-container p {
 }
 div.about-container span.dates {
   float: right;
+}
+div.skills-container button.skill {
+  margin: 13px 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+div.skills-container {
+  align-items: center;
 }
 
 /* Phone Questions */
@@ -393,7 +410,6 @@ div.about-container span.dates {
   background-color: white;
   margin: 8px;
   padding: 8px 8px 15px 8px;
-  min-width: 150px;
 }
 .language-card h3 {
   font: 1.17em/1.5 "Josefin Sans", arial, sans-serif;
@@ -496,11 +512,18 @@ div.social-media-icon img {
 }
 
 @media only screen and (max-width: 530px) {
-  .language-card-container {
-    min-width: 130px;
-  }
   .col-sm-1 {
     width: 98%;
     padding-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  #call-to-action .primary-button,
+  #call-to-action .secondary-button {
+    display: block;
+    width: 225px;
+    padding: 10px;
+    margin: 10px auto;
   }
 }

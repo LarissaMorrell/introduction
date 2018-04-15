@@ -23,7 +23,6 @@ export default class CollapsiblePanel extends Component {
 
   componentDidMount() {
     this.getHeight();
-    console.log(this.state.height);
   }
 
   render() {

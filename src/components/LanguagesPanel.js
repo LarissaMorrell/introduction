@@ -7,7 +7,7 @@ export default class LanguagesPanel extends Component {
     let settings = {
       arrows: true,
       infinite: true,
-      slidesToShow: this.props.windowWidth > 768 ? 3 : 4,
+      slidesToShow: this.props.windowWidth > 768 ? 3 : 5,
       slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode: false,
