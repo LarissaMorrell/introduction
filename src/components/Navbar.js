@@ -58,6 +58,7 @@ export default class Navbar extends Component {
                   <a
                     href="https://larissamorrell.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="portfolio"
                   >
                     <i className="fas fa-briefcase" />

@@ -4,7 +4,7 @@ import StarRating from "./StarRating.js";
 export default class LanguageCard extends Component {
   render() {
     return (
-      <div className="language-card">
+      <div className="card">
         <img
           className="language-logo"
           src={`./media/${this.props.language.toLowerCase()}-logo.png`}
@@ -16,7 +16,8 @@ export default class LanguageCard extends Component {
           className="primary-button full-width button-styling"
           href="https://github.com/LarissaMorrell"
           alt="git hub portfolio"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           View
         </a>

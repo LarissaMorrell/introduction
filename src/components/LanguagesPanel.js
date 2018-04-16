@@ -52,16 +52,19 @@ export default class LanguagesPanel extends Component {
 
     let slides = cards.map((card, i) => {
       return (
-        <div className="language-card-container" key={i}>
+        <div className="card-container" key={i}>
           <LanguageCard language={card.language} rating={card.rating} />
         </div>
       );
     });
 
     return (
-      <Slider {...settings} className="languages-panel">
-        {slides}
-      </Slider>
+      <div>
+        <h3>Languages & Frameworks</h3>
+        <Slider {...settings} className="languages-panel">
+          {slides}
+        </Slider>
+      </div>
     );
   }
 }

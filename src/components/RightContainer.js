@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DevInfoContainer from "./DevInfoContainer.js";
 import CallToActionButtons from "./CallToActionButtons.js";
 import AboutLarissaContainer from "./AboutLarissaContainer.js";
+import ProjectsPanel from "./ProjectsPanel.js";
 import LanguagesPanel from "./LanguagesPanel.js";
 import CallWithQuestions from "./CallWithQuestions.js";
 // import Video from "./Video.js";
@@ -35,6 +36,7 @@ export default class RightContainer extends Component {
         <CallToActionButtons />
         <AboutLarissaContainer />
         <LanguagesPanel windowWidth={this.state.width} />
+        <ProjectsPanel windowWidth={this.state.width} />
         <CallWithQuestions />
       </div>
     );
