@@ -37,7 +37,7 @@ export default class AboutEducation extends Component {
         </div>
         <hr />
         <div>
-          <h3>Masters Degree, Instuctional Technology</h3>
+          <h3>Masters Degree, Instructional Technology</h3>
           <h4>
             Lesley University
             <span className="dates">2011-2012</span>
@@ -51,7 +51,7 @@ export default class AboutEducation extends Component {
             WV Wesleyan College
             <span className="dates">2002-2006</span>
           </h4>
-          <p>GPA 3.14. Alphi Phi Omega (Community Service Fraternity)</p>
+          <p>GPA 3.14. Alpha Phi Omega (Community Service Fraternity)</p>
         </div>
       </div>
     );

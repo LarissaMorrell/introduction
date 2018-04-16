@@ -11,9 +11,9 @@ export default class AboutDescription extends Component {
           web apps and learning everything I can about code.
         </p>
         <p>
-          For the last 11 years I taught students spanning grades K-12, in a
-          variety of STEM contents. My first taste of code was a HTML/CSS course
-          while pursuing my {`Master's`} Degree, and I loved it so much I
+          For the last 11 years, I taught students spanning grades K-12 in a
+          variety of STEM contents. My first taste of code was an HTML/CSS
+          course while pursuing my {`Master's`} Degree, and I loved it so much I
           completed a Computer Science certificate in Java. Before I knew it, I
           made the decision to leave teaching and enrolled in{" "}
           <a

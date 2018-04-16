@@ -20,7 +20,8 @@ export default class AboutExperience extends Component {
             <a
               href="https://www.donorschoose.org/fundingsupport"
               alt="Larissa's Donors Choose"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               DonorsChoose.org
             </a>.
@@ -39,7 +40,7 @@ export default class AboutExperience extends Component {
             CSS, Microsoft Office, and programming concepts. Main point of
             contact between school administration and Network Administrator.
             Regular maintenance and updating of the website for NHCS and class
-            website. Regularly troubleshooted various forms of technology
+            website. Regularly troubleshot various forms of technology
             throughout the school, including training of key personnel to also
             perform setup and troubleshooting tasks on multiple technologies.
           </p>
@@ -52,9 +53,9 @@ export default class AboutExperience extends Component {
           </h3>
           <h4>Beacon Charter High School for the Arts</h4>
           <p>
-            Aided many teachers with incorporation of various technologies into
-            lessons & projects. Helped many teachers troubleshoot problems with
-            software and operating system errors.
+            Assisted teachers with multiple technology integrations. Helped many
+            teachers troubleshoot problems with software and operating system
+            errors.
           </p>
         </div>
         <hr />
