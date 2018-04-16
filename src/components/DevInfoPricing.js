@@ -6,8 +6,8 @@ export default class DevInfoPricing extends Component {
       <div className="dev-pricing-container">
         <div>
           <span className="pricing-text red-font">$199.99 </span>
-          <span className="strike-through">$100,000</span>
-          <span className="red-font"> 48% Off</span>
+          <span className="strike-through">$399.99</span>
+          <span className="red-font"> 50% Off</span>
         </div>
         <div>
           <span className="pricing-text red-font">Hire Today!</span>
