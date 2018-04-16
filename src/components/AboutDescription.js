@@ -16,7 +16,11 @@ export default class AboutDescription extends Component {
           while pursuing my {`Master's`} Degree, and I loved it so much I
           completed a Computer Science certificate in Java. Before I knew it, I
           made the decision to leave teaching and enrolled in{" "}
-          <a href="https://www.thinkful.com/" target="_blank">
+          <a
+            href="https://www.thinkful.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Thinkful
           </a>
           {`'s`} Full Stack Web Development Bootcamp.
