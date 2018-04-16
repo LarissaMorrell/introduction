@@ -639,7 +639,15 @@ div.social-media-icon img {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .left-container {
+    height: 400px;
+  }
+}
 @media only screen and (max-width: 530px) {
+  .left-container {
+    height: 350px;
+  }
   .col-sm-1 {
     width: 98%;
     padding-left: 2%;
