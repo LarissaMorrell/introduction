@@ -89,9 +89,6 @@ export default class Footer extends Component {
             </ul>
           </div>
         </div>
-        <div className="row footer-fine-print">
-          Easy commute to Boston from Reading, MA
-        </div>
       </footer>
     );
   }
