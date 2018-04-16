@@ -8,9 +8,9 @@ export default class Navbar extends Component {
           <div className="outer">
             Available to make amazing contributions to your team
           </div>
-          <div className="inner">
+          <div id="main-navbar">
             <div className="logo">
-              <a href="http://larissamorrell.com">
+              <a href="http://larissamorrell.com" rel="noopener noreferrer">
                 <img
                   className="header-logo"
                   src="media/wayfair-logo.png"
@@ -18,17 +18,22 @@ export default class Navbar extends Component {
                 />
               </a>
               <div className="float-right">
-                <input type="search" placeholder="Insert dreams quote here" />
+                <form>
+                  <span className="magnifying-glass">
+                    <i className="fas fa-search" />
+                  </span>
+                  <input type="search" placeholder="Work hard. Dream Big." />
+                </form>
                 <button className="camera-search secondary-purple-button">
-                  <i class="fas fa-camera" />
+                  <i className="fas fa-camera" />
                 </button>
                 <ul>
                   <li>
-                    <i class="fa fa-user" aria-hidden="true" />
+                    <i className="fa fa-user" aria-hidden="true" />
                     <span> Profile</span>
                   </li>
                   <li>
-                    <i class="fas fa-shopping-cart" />
+                    <i className="fas fa-shopping-cart" />
                     <span> Cart</span>
                   </li>
                 </ul>
@@ -40,6 +45,3 @@ export default class Navbar extends Component {
     );
   }
 }
-// <div className="magnifying-glass">
-//   <i class="fas fa-search" />
-// </div>
