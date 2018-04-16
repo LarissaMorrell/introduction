@@ -60,7 +60,7 @@ export default class LanguagesPanel extends Component {
 
     return (
       <div>
-        <h3>Languages & Frameworks</h3>
+        <h2>Languages & Frameworks</h2>
         <Slider {...settings} className="languages-panel">
           {slides}
         </Slider>

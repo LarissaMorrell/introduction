@@ -351,6 +351,10 @@ div.large-image-container > img.large-image {
   width: 500px;
   padding: 10px;
 }
+.right-container h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
 #developer-info-container {
   background: #fff;
   padding: 15px 20px 10px 15px;

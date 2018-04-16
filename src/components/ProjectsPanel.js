@@ -25,7 +25,7 @@ export default class ProjectsPanel extends Component {
 
     return (
       <div>
-        <h3>Recent Projects</h3>
+        <h2>Recent Projects</h2>
         <Slider {...settings} className="languages-panel">
           <div className="card-container">
             <ProjectCard
