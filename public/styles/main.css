@@ -538,6 +538,12 @@ div.skills-container {
   font-weight: 300;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 8px;
+  max-height: 30px;
+  overflow: hidden;
+}
+.card p.project-description {
+  max-height: 100px;
+  overflow: hidden;
 }
 .card > .rating {
   margin-bottom: 8px;
@@ -654,14 +660,6 @@ div.social-media-icon img {
   }
   #main-navbar span {
     display: none;
-  }
-  .card h3 {
-    max-height: 30px;
-    overflow: hidden;
-  }
-  .card p.project-description {
-    max-height: 100px;
-    overflow: hidden;
   }
 }
 
