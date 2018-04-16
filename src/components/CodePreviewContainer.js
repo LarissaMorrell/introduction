@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import ThumbnailPreview from "./ThumbnailPreview.js";
 let images = [
-  "headshot.jpg",
-  "node-logo.png",
-  "react-logo.png",
-  "html-logo.png"
+  "workstation.jpg",
+  "vintner-front-end.png",
+  "vintner-mongoose.png",
+  "vintner-node.png"
 ];
 
 export default class LeftContainer extends Component {
@@ -17,12 +17,13 @@ export default class LeftContainer extends Component {
 
   changeImage(e) {
     let newState = Object.assign({}, this.state, {
-      activeImage: e.target.src.split("/media/")[1]
+      activeImage: e.target.src.split("/media/screenshots/")[1]
     });
     this.setState(newState);
   }
 
   render() {
+    let activeImage = this.state.activeImage;
     return (
       <div className="profile-images">
         <ThumbnailPreview
@@ -33,8 +34,8 @@ export default class LeftContainer extends Component {
         <div className="large-image-container">
           <img
             className="large-image"
-            src={`media/${this.state.activeImage}`}
-            alt="headshot"
+            src={`media/screenshots/${activeImage}`}
+            alt={activeImage.substring(0, activeImage.indexOf("."))}
           />
         </div>
       </div>
