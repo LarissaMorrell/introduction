@@ -13,7 +13,7 @@ export default class ProjectCard extends Component {
         <div className="project-button">
           <a
             className="secondary-button secondary-purple-button button-styling"
-            href={`https://github.com/LarissaMorrell/${this.props.project}`}
+            href={this.props.repo}
             alt={`${this.props.project} on git hub`}
             target="_blank"
             rel="noopener noreferrer"

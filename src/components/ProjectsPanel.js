@@ -32,6 +32,7 @@ export default class ProjectsPanel extends Component {
               project={"Vintner"}
               file={"vintner.png"}
               demo="https://vintner.netlify.com"
+              repo="https://github.com/LarissaMorrell/vintner"
               description="Read and write reviews of drinks from local breweries, wineries, and more."
             />
           </div>
@@ -40,6 +41,7 @@ export default class ProjectsPanel extends Component {
               project={"MrktTracker"}
               file={"mrkttracker.png"}
               demo="https://mrkt-tracker.herokuapp.com/"
+              repo="https://github.com/LarissaMorrell/mrkt-tracker"
               description="Helping retail sales personnel organize information for each store location."
             />
           </div>
@@ -47,7 +49,8 @@ export default class ProjectsPanel extends Component {
             <ProjectCard
               project={"TrailForecaster"}
               file={"trailforecaster.jpg"}
-              demo="https://mrkt-tracker.herokuapp.com/"
+              demo="https://larissamorrell.github.io/trail-forecaster/"
+              repo="https://github.com/LarissaMorrell/trail-forecaster"
               description="Use recent and forecasted weather to find hiking trails with the best conditions."
             />
           </div>
@@ -55,7 +58,8 @@ export default class ProjectsPanel extends Component {
             <ProjectCard
               project={"Mt. Washington Quiz"}
               file={"mtwashington.jpg"}
-              demo="https://mrkt-tracker.herokuapp.com/"
+              demo="https://larissamorrell.github.io/quiz-app/"
+              repo="https://github.com/LarissaMorrell/quiz-app"
               description="How much do you know about Mount Washington? Test your knowledge with this quiz."
             />
           </div>

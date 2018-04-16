@@ -42,4 +42,3 @@ export default class RightContainer extends Component {
     );
   }
 }
-// <Video />
