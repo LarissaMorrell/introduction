@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Overlay from "./Overlay.js";
 import NavDropdownProfile from "./NavDropdownProfile.js";
+import SocialMediaIcon from "./SocialMediaIcon.js";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -37,23 +38,41 @@ export default class Navbar extends Component {
                     <i className="fas fa-search" />
                   </span>
                   <input type="search" placeholder="Work hard. Dream Big." />
+
+                  <button className="camera-search secondary-purple-button">
+                    <i className="fas fa-camera" />
+                  </button>
                 </form>
-                <button className="camera-search secondary-purple-button">
-                  <i className="fas fa-camera" />
+                <button>
+                  <SocialMediaIcon
+                    name="github"
+                    link="https://github.com/LarissaMorrell"
+                  />
                 </button>
-                <ul>
-                  <li
-                    onMouseOver={() => this.addDropdown(<NavDropdownProfile />)}
-                    onMouseOut={() => this.removeDropdown()}
+                <button>
+                  <SocialMediaIcon
+                    name="linkedin"
+                    link="https://www.linkedin.com/in/larissamorrell/"
+                  />
+                </button>
+                <button>
+                  <a
+                    href="https://larissamorrell.com"
+                    target="_blank"
+                    className="portfolio"
                   >
-                    <i className="fa fa-user" aria-hidden="true" />
-                    <span> Profile</span>
-                  </li>
-                  <li>
-                    <i className="fas fa-envelope-open" />
-                    <span> Contact</span>
-                  </li>
-                </ul>
+                    <i className="fas fa-briefcase" />
+                    <span> Portfolio</span>
+                  </a>
+                </button>
+                <button
+                  className="contact-info"
+                  onMouseOver={() => this.addDropdown(<NavDropdownProfile />)}
+                  onMouseOut={() => this.removeDropdown()}
+                >
+                  <i className="fa fa-user" aria-hidden="true" />
+                  <span> Contact</span>
+                </button>
               </div>
             </div>
           </div>

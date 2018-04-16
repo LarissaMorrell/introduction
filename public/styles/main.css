@@ -64,6 +64,15 @@ h4 {
 .gray-star {
   color: #dedede;
 }
+.overlay {
+  /* position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; */
+}
 
 /* Buttons which have link styling */
 button.link-styling {
@@ -184,6 +193,16 @@ header > .outer {
   padding: 8px;
   font-size: 0.813rem;
 }
+#main-navbar a {
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+}
+#main-navbar .portfolio:hover {
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+}
 #main-navbar .header-logo {
   position: relative;
   top: 9px;
@@ -214,6 +233,14 @@ header > .outer {
 #main-navbar input:focus {
   outline: none;
 }
+#main-navbar button {
+  border: none;
+  margin: 5px;
+}
+#main-navbar button {
+  border: none;
+  margin: 5px;
+}
 #main-navbar button.camera-search {
   max-height: 45px;
   width: 46px;
@@ -232,18 +259,11 @@ header > .outer {
 #main-navbar button.camera-search:focus {
   outline: none;
 }
-#main-navbar ul {
-  list-style: none;
-  padding: 0;
-  display: inline;
+#main-navbar div.social-media-icon {
+  margin: 0;
 }
-#main-navbar ul li {
-  display: inline-block;
-  font: 17px/1.5 "Josefin Sans", arial, sans-serif;
-  color: #6f6f6f;
-  font-weight: 300;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  padding: 17px 18px;
+#main-navbar div.social-media-icon img {
+  max-height: 18px;
 }
 #main-navbar input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -272,6 +292,20 @@ header > .outer {
   font-weight: 300;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   color: #6f6f6f;
+}
+.nav-dropdown {
+  width: 300px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: #fff;
+  border: 3px solid #f6f4ee;
+}
+.nav-dropdown ul {
+  list-style-type: none;
+}
+.nav-dropdown ul span {
+  padding-left: 50px;
 }
 .float-right {
   float: right;
@@ -577,7 +611,16 @@ div.social-media-icon {
 div.social-media-icon img {
   height: 40px;
 }
-
+@media only screen and (max-width: 1125px) {
+  #main-navbar input {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  #main-navbar form {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .left-container {
     width: 100vw;
@@ -598,6 +641,9 @@ div.social-media-icon img {
   .col-sm-1 {
     width: 98%;
     padding-left: 2%;
+  }
+  #main-navbar span {
+    display: none;
   }
 }
 
