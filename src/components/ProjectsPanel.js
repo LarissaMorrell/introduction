@@ -3,11 +3,20 @@ import Slider from "react-slick";
 import ProjectCard from "./ProjectCard.js";
 
 export default class ProjectsPanel extends Component {
+  getNumberOfSlides(width) {
+    if (width > 768) {
+      return 2;
+    } else if (width > 518) {
+      return 3;
+    } else {
+      return 2;
+    }
+  }
   render() {
     let settings = {
       arrows: true,
       infinite: true,
-      slidesToShow: this.props.windowWidth > 768 ? 2 : 1,
+      slidesToShow: this.getNumberOfSlides(this.props.windowWidth),
       slidesToScroll: 1,
       adaptiveHeight: true,
       centerMode: false,

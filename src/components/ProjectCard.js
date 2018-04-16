@@ -9,7 +9,7 @@ export default class ProjectCard extends Component {
           alt={`${this.props.project}`}
         />
         <h3>{this.props.project}</h3>
-        <p>{this.props.description}</p>
+        <p className="project-description">{this.props.description}</p>
         <div className="project-button">
           <a
             className="secondary-button secondary-purple-button button-styling"

@@ -300,6 +300,7 @@ header > .outer {
   right: 0;
   background: #fff;
   border: 3px solid #f6f4ee;
+  z-index: 1;
 }
 .nav-dropdown ul {
   list-style-type: none;
@@ -319,7 +320,7 @@ header > .outer {
   padding-bottom: 6px;
 }
 .left-container .sub-nav > nav {
-  background-color: rgba(246, 244, 238, 0.6);
+  background-color: #faf9f6;
 }
 .left-container div.thumbnail-image-container {
   width: 75px;
@@ -399,6 +400,9 @@ div.large-image-container > img.large-image {
   display: inline-block;
   width: 36%;
   margin-right: 8px;
+}
+.sticky-inner-wrapper {
+  z-index: 5;
 }
 
 /* Collapsible Panels */
@@ -574,9 +578,6 @@ footer .row {
   width: 100%;
   margin: 0 auto;
 }
-footer .footer-fine-print {
-  padding-left: 5px;
-}
 /* Clearfix */
 .row::before,
 .row::after {
@@ -645,6 +646,14 @@ div.social-media-icon img {
   }
   #main-navbar span {
     display: none;
+  }
+  .card h3 {
+    max-height: 30px;
+    overflow: hidden;
+  }
+  .card p.project-description {
+    max-height: 100px;
+    overflow: hidden;
   }
 }
 
