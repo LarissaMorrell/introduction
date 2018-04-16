@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Overlay from "./Overlay.js";
 import NavDropdownProfile from "./NavDropdownProfile.js";
 import SocialMediaIcon from "./SocialMediaIcon.js";
 
@@ -11,7 +10,7 @@ export default class Navbar extends Component {
     };
   }
   addDropdown(component) {
-    this.setState({ dropdown: <Overlay component={component} /> });
+    this.setState({ dropdown: component });
   }
   removeDropdown() {
     this.setState({ dropdown: null });
