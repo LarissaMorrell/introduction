@@ -184,6 +184,11 @@ header > .outer {
   padding: 8px;
   font-size: 0.813rem;
 }
+header > .outer a {
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
 #main-navbar {
   box-sizing: border-box;
   color: #000;

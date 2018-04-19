@@ -20,11 +20,22 @@ export default class Navbar extends Component {
       <div>
         <header className="navbar">
           <div className="outer">
-            Available to make amazing contributions to your team
+            This site was created using React.js - To view the repo{" "}
+            <a
+              href="https://github.com/LarissaMorrell/wayfair-meet-larissa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              click here
+            </a>!
           </div>
           <div id="main-navbar">
             <div className="logo">
-              <a href="http://larissamorrell.com" rel="noopener noreferrer">
+              <a
+                href="http://larissamorrell.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="header-logo"
                   src="media/wayfair-logo.png"
